@@ -64,16 +64,16 @@ const Home = (props) => {
           color="primary"
           aria-label="add"
           style={{
-            position: 'absolute',
+            position: 'left',
             top: '20px',
-            right: '10px',
+            left: '10px',
           }}
 
         >
           <AddIcon />
         </Fab>
       </Button>
-      <p> add user by clicking on right side + icon</p>
+      <p> add user by clicking on left side + icon</p>
       <Button
                     onClick={save}
                     style={{
