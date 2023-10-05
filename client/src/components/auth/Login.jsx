@@ -52,7 +52,7 @@ function Login() {
         }}>
         <Typography level='title-lg' fontWeight={'Bold'} fontSize={40}>Login</Typography>
 
-        <TextField fullWidth id="filled-basic1" label="email" variant="filled" value={email} onChange={(e) => setemail(e.target.value)}
+        <TextField fullWidth id="filled-basic1" label="Email" variant="filled" value={email} onChange={(e) => setemail(e.target.value)}
           sx={{
             my: 1,
             mx: 'auto',

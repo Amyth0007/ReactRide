@@ -16,9 +16,9 @@ const  UpdateUser = (props) => {
 
     const a = await response.data;
     if(a){
-        alert("user updated succesfully")
+        alert("User updated succesfully!")
     }else{
-        alert("something went wrong")
+        alert("Something went wrong!")
     }
     
 
@@ -72,7 +72,7 @@ const  UpdateUser = (props) => {
           }} />
 
         <Button variant='primary' type='submit'> Submit</Button>
-        <Button variant='secondary' > cancel</Button>
+        <Button variant='secondary' > Cancel</Button>
       </Box>
 
     </form>

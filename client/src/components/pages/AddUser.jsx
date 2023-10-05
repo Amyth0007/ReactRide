@@ -55,7 +55,7 @@ function AddUser(props) {
         }}>
         <Typography level='title-lg' fontWeight={'Bold'} fontSize={20}>Add user</Typography>
 
-        <TextField fullWidth id="filled-basic1" label="userName" variant="filled" value={userName} onChange={(e) => setuserName(e.target.value)}
+        <TextField fullWidth id="filled-basic1" label="UserName" variant="filled" value={userName} onChange={(e) => setuserName(e.target.value)}
           sx={{
             my: 1,
             mx: 'auto',
@@ -63,7 +63,7 @@ function AddUser(props) {
         <br>
         </br>
         <TextField fullWidth id="outlined-password-input"
-          label="email"
+          label="Email"
           type="text"
           value={email} onChange={(e) => setemail(e.target.value)}
           sx={{

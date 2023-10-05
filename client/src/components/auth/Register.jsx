@@ -79,12 +79,12 @@ function Register() {
         }}>
         <Typography level='title-lg' fontWeight={'Bold'} fontSize={40}>Register</Typography>
         
-        <TextField required fullWidth id="filled-basic" label="name" variant="filled" value={name} onChange={(e) => setname(e.target.value)}
+        <TextField required fullWidth id="filled-basic" label="Name" variant="filled" value={name} onChange={(e) => setname(e.target.value)}
           sx={{
             my: 1,
             mx: 'auto',
           }} />
-        <TextField required  fullWidth id="filled-basic1" label="email" variant="filled" value={email} onChange={(e) => setemail(e.target.value)}
+        <TextField required  fullWidth id="filled-basic1" label="Email" variant="filled" value={email} onChange={(e) => setemail(e.target.value)}
           sx={{
             my: 1,
             mx: 'auto',
@@ -122,14 +122,14 @@ function Register() {
             <FormControlLabel value='other' control={<Radio />} label="Other" />
           </RadioGroup>
 
-          <Typography level='title' fontSize={20}>How do you hear about us</Typography>
-          <FormControlLabel control={<Checkbox />}  label="Linkdin" onChange={(e)=>sethear("Linkdin")} sx={{ display: 'flex', alignItems: 'center', marginBottom: '4px' }} />
+          <Typography level='title' fontSize={20}>How did you heard about us?</Typography>
+          <FormControlLabel control={<Checkbox />}  label="Linkedin" onChange={(e)=>sethear("Linkdin")} sx={{ display: 'flex', alignItems: 'center', marginBottom: '4px' }} />
           
           <FormControlLabel control={<Checkbox />}  label="Job portal" onChange={(e)=>sethear("Job portal")} sx={{ display: 'flex', alignItems: 'center', marginBottom: '4px' }}/>
           
           <FormControlLabel control={<Checkbox  />}  label="Friends" onChange={(e)=>sethear("friends")} sx={{ display: 'flex', alignItems: 'center', marginBottom: '4px' }} />
           
-          <FormControlLabel control={<Checkbox  />}  label="others" onChange={(e)=>sethear("others")} sx={{ display: 'flex', alignItems: 'center', marginBottom: '4px' }} />
+          <FormControlLabel control={<Checkbox  />}  label="Others" onChange={(e)=>sethear("others")} sx={{ display: 'flex', alignItems: 'center', marginBottom: '4px' }} />
            <br/>
 
            <FormControl sx={{ m: 1, minWidth: 120 , display: 'flex' }}>
@@ -145,10 +145,10 @@ function Register() {
             <em>None</em>
           </MenuItem>
           <MenuItem value={"Mumbai"}>Mumbai</MenuItem>
-          <MenuItem value={"pune"}>pune</MenuItem>
+          <MenuItem value={"pune"}>Pune</MenuItem>
           <MenuItem value={"Ahmedabad"}>Ahmedabad</MenuItem>
         </Select>
-        <FormHelperText>Select thec ity</FormHelperText>
+        <FormHelperText>Select the city</FormHelperText>
       </FormControl>
 
       <Autocomplete
