@@ -21,18 +21,16 @@ function App() {
   return (
     <div className="App">
       <Router>
-      {/* <AppNav/> */}
-        <Newav/>
-       <Routes>
-        <Route path='/' element={login ? <Home name="amit"/> : <Login/>}/>
-        <Route path='/Feed' element={login ? <Feed/> : <Login/>} />
-        <Route path='/Create' element={login ? <CreateUser/> : <Login/>}/>
-        <Route path='/Register' element={ <Register/>}/>
-        <Route path='/Login' element={<Login/>}/>
-       </Routes>
+        {/* <AppNav/> */}
+        <Newav />
+        <Routes>
+          <Route path="/" element={login ? <Home name="amit" /> : <Login />} />
+          <Route path="/Feed" element={login ? <Feed /> : <Login />} />
+          <Route path="/Create" element={login ? <CreateUser /> : <Login />} />
+          <Route path="/Register" element={<Register />} />
+          <Route path="/Login" element={<Login />} />
+        </Routes>
       </Router>
-      
-
     </div>
   );
 }

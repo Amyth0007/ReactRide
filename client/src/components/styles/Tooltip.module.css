@@ -1,0 +1,56 @@
+/* Define the initial style for the button */
+.hover_button {
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Add hover text using ::before pseudo-element */
+.hover_button::before {
+  content: "Delete Item";
+  font-size: 0.8rem;
+  width: 6rem;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+/* Show hover text on button hover */
+.hover_button:hover::before {
+  opacity: 1;
+}
+
+.hover_button_edit {
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+/* Add hover text using ::before pseudo-element */
+.hover_button_edit::before {
+  content: "Edit Item";
+  font-size: 0.8rem;
+  width: 6rem;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #333;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  pointer-events: none;
+}
+
+/* Show hover text on button hover */
+.hover_button_edit:hover::before {
+  opacity: 1;
+}
