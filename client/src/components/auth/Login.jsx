@@ -22,6 +22,7 @@ function Login() {
       window.localStorage.setItem("isloggedin", true);
       window.localStorage.setItem("email", email);
 
+      alert("Logged in Successfully");
       navigate('/');
     } else {
       alert("invalid data");
