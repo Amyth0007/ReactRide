@@ -21,6 +21,7 @@ function Newav() {
     const navigate = useNavigate();
     function signout() {
         window.localStorage.removeItem("isloggedin");
+        window.localStorage.removeItem("email");
         navigate("/login");
     }
 

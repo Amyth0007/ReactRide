@@ -46,7 +46,7 @@ const Home = props => {
                 navigate("/login");
             }, 2000);
         }
-    }, []);
+    }, [navigate]);
 
     const style = {
         position: "absolute",
